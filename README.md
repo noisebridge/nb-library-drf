@@ -2,6 +2,8 @@
 
 Noisebridge library Django REST Framework
 
+We will be using SQLite as a database.
+
 To start the server from scratch:
 
 ```
