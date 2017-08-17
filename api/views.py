@@ -2,7 +2,7 @@ from django.contrib.auth.models import User
 from django.http import HttpResponse
 
 from rest_framework import viewsets
-from library.api.serializers import UserSerializer
+from api.serializers import UserSerializer
 
 
 class UserViewSet(viewsets.ModelViewSet):

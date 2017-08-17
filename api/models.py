@@ -32,7 +32,6 @@ class Book(models.Model):
     location = models.ForeignKey('Location', on_delete=models.SET_NULL, null=True, default=None)
 
 
-
 class Location(models.Model):
     ''' Locations have a shortname and a pkey ID. 
     Books are linked to location by ForeignKey using the ID (pkey).
@@ -40,4 +39,4 @@ class Location(models.Model):
     id = models.IntegerField(primary_key=True)
     label_name = models.CharField(max_length=20, unique=True)
     full_name = models.CharField(max_length=100)
-    books = models.ForeignKey('Book', on_delete=models.SET_NULL, null=True, blank=True)
+    # books = models.ForeignKey('Book', on_delete=models.SET_NULL, null=True, blank=True)
